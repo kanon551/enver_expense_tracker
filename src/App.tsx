@@ -6,13 +6,14 @@ import {
   Route,
 } from "react-router-dom";
 import Home from './pages/Home';
+import Layout from './global/Layout';
 
 function App() {
   return (
-    <div>
+    <div style={{background:'#ebebeb'}}>
       <Router>
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Layout><Home /></Layout>} />
         </Routes>
       </Router>
     </div>
